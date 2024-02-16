@@ -15,8 +15,8 @@ import java.util.TreeSet;
 
 public class Test {
 	
-	public static int COLLECTION_SIZE= 100000;
-	private static final int NUM_TESTS = 100;
+    public static int COLLECTION_SIZE= 100000;
+    private static final int NUM_TESTS = 100;
 	
 	
     private static HashSet<Integer> hashSet = new HashSet<>();
@@ -55,11 +55,11 @@ public class Test {
 		
 		int k =0;
 		for (Integer item : items) {
-            hashMap.put(k, item);
-            treeMap.put(k, item);
-            linkedHashMap.put(k,item);
-            k++;
-        }
+		    hashMap.put(k, item);
+		    treeMap.put(k, item);
+		    linkedHashMap.put(k,item);
+		    k++;
+		    }
 		
 		for(int i=0; i<NUM_TESTS; i++) {
 		add();
@@ -76,7 +76,7 @@ public class Test {
 		System.out.printf(" linkedHashMapTime add time: %d\n", linkedHashMapTime / NUM_TESTS);
 		System.out.println("\n");
 		
-		hashSetTime = 0;
+	    hashSetTime = 0;
 	    treeSetTime = 0;
 	    linkedHashSetTime = 0;
 	    arrayListTime = 0;
@@ -103,7 +103,7 @@ public class Test {
 	    System.out.printf(" linkedHashMap contains time: %d\n", linkedHashMapTime / NUM_TESTS);
 	    System.out.println("\n");
         
-		hashSetTime = 0;
+	    hashSetTime = 0;
 	    treeSetTime = 0;
 	    linkedHashSetTime = 0;
 	    arrayListTime = 0;
@@ -130,7 +130,7 @@ public class Test {
 		System.out.printf(" linkedHashMap remove time: %d\n", linkedHashMapTime / NUM_TESTS);
 		System.out.println("\n");
 
-		hashSetTime = 0;
+	    hashSetTime = 0;
 	    treeSetTime = 0;
 	    linkedHashSetTime = 0;
 	    arrayListTime = 0;
